@@ -10,12 +10,14 @@ class MainController extends Controller
     //this deals with homepage(main page-we do the whole logic here before displaying the homepage)
     public function index()
     {
+        return view('index');
+        //logic
         $name= 'BABWAT';
         $sex = 'Female';
         $colors = [
             'Black',
             'Red',
-       'Yellow',
+           'Yellow',
         ];
         return view('home', [
             'name' => $name,
